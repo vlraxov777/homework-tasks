@@ -1,7 +1,7 @@
 import random
-from typing import Final
-from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from aiogram import Bot, Dispatcher, types
+from aiogram.filters import Command
+import asyncio
 
 # Список строк из трека «ДИНАСТИЯ»
 TRACK_LINES = ["Давалке МСК стреляю сиги — ковбой",
@@ -48,30 +48,32 @@ TRACK_LINES = ["Давалке МСК стреляю сиги — ковбой",
                ]
 
 
-TOKEN: Final = '8863603723:AAFZca67V2pBLFVBcY_tVTQeP-z7x3nXoEY'
-BOT_USERNAME: Final = '@dynasty_swaga_bot'
+TOKEN = '8863603723:AAFZca67V2pBLFVBcY_tVTQeP-z7x3nXoEY'
 
-async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
+bot = Bot(token = TOKEN)
+dp = Dispatcher()
+
+@dp.message(Command('start'))
+async def start_command(message: types.Message):
+        text = (
         "Приветствую тебя, my friend!\n"
         "Ты находишься в телеграмм-боте, созданном с целью того, чтобы выполнить "
         "задание для поступления в Информационный комитет. Этот бот генерирует случайную строчку "
         "из текста песни \"ДИНАСТИЯ\" – VILLIAN, madk1d."
         )
-async def swaga_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-     random_line = random.choice(TRACK_LINES)
-     await update.message.reply_text(random_line)
-def main():
-   
-    application = Application.builder().token(TOKEN).build()
-    
-   
-    application.add_handler(CommandHandler("start", start_command))
-    application.add_handler(CommandHandler("swaga", swaga_command))
+        await message.answer(text)
 
-    
-    print("Бот успешно запущен и работает...")
-    application.run_polling()
+@dp.message(Command('swaga'))
+async def start_command(message: types.Message):
+    random_line = random.choice(TRACK_LINES)
+    await message.answer(random_line)
+
+   
+async def main():
+      print('Бот успешно запущен...') 
+      await dp.start_polling(bot)
 
 if __name__ == '__main__':
-    main()
+      asyncio.run(main())
+    
+    
