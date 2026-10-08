@@ -50,6 +50,6 @@
 ## 📚 Источники, использованные при выполнении работы:
 
 При реализации заданий и настройке окружения использовались следующие справочные материалы и официальная документация:
-1. **Консольная программа в Python:** Официальный интерактивный учебник [Pythontutor.ru](https://pythontutor.ru), справочное руководство разработчика [Metanit (Раздел Python)](https://metanit.com), платформа для обучения "Stepic" - "Поколение Python": модуль random [https://stepik.org/lesson/338530/step/1?unit=322038).
-2. **Разработка бота:** Официальная документация фреймворка [aiogram 3.x](https://aiogram.dev) и статьи на [Habr.com](https://habr.com) по теме асинхронного программирования на Python.
+1. **Консольная программа в Python:** Официальный интерактивный учебник [Pythontutor.ru](https://pythontutor.ru), справочное руководство разработчика [Metanit (Раздел Python)](https://metanit.com), платформа для обучения "Stepic" - "Поколение Python": [модуль random](https://stepik.org/lesson/338530/step/1?unit=322038).
+2. **Разработка бота:** Официальная документация фреймворка [aiogram 3.x](https://aiogram.dev), статьи на [Habr.com](https://habr.com) по теме асинхронного программирования на Python, видео на YouTube: [Как создать Telegram-Бота на Python для начинающих](https://vk.ru/away.php?to=https%3A%2F%2Fyoutu.be%2F4olhiBZLcpc%3Fsi%3DAofQ5ERYSRkvw0fG&utf=1).
 3. **Контейнеризация:** Руководство по Docker для начинающих [Docker на Metanit](https://metanit.com) и обучающие материалы сообщества Хабр по упаковке Python-скриптов в Docker-образы.
