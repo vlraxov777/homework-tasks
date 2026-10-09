@@ -53,7 +53,7 @@
 При реализации заданий и настройке окружения использовались следующие справочные материалы и официальная документация:
 1. **Консольная программа в Python:** Официальный интерактивный учебник [Pythontutor.ru](https://pythontutor.ru), справочное руководство разработчика [Metanit (Раздел Python)](https://metanit.com), платформа для обучения "Stepic" - "Поколение Python": [модуль random](https://stepik.org/lesson/338530/step/1?unit=322038) и [Исключения в Python: что это такое и как с ними работать](https://skillbox.ru/media/code/isklyucheniya-v-python-chto-eto-takoe-i-kak-s-nimi-rabotat/).
 2. **Разработка бота:** Официальная документация фреймворка [aiogram 3.x](https://aiogram.dev), статьи на [Habr.com](https://habr.com) по теме асинхронного программирования на Python, видео на YouTube: [Как создать Telegram-Бота на Python для начинающих](https://vk.ru/away.php?to=https%3A%2F%2Fyoutu.be%2F4olhiBZLcpc%3Fsi%3DAofQ5ERYSRkvw0fG&utf=1).
-3. **Подготовка бота к запуску на сервере с помощью Docker:** обучающие материалы сообщества Хабр: [Полное практическое руководство по Docker](https://habr.com/ru/articles/310460/) и обучающие материалы сообщества Хабр: [Docker для начинающих](https://habr.com/ru/companies/netologyru/articles/967546/).
+3. **Подготовка бота к запуску на сервере с помощью Docker:** обучающие материалы сообщества Хабр: [Полное практическое руководство по Docker](https://habr.com/ru/articles/310460/) и [Docker для начинающих](https://habr.com/ru/companies/netologyru/articles/967546/).
 4. **Редактирование файла "README.MD":** обучающие материалы сообщества Хабр: [оформляем README-файл](https://habr.com/ru/articles/649363/).
 
 ---
